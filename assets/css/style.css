@@ -1,0 +1,11 @@
+
+:root {
+--grey: rgb(106, 106, 106);
+--slate-blue: rgb(127, 204, 255)
+}
+
+header {
+    background-color: var(--slate-blue);
+    color: var(--grey);
+}
+
