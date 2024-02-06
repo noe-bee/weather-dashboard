@@ -29,7 +29,8 @@
 
   <body>
     <div class="container">
-      <div class="row justify-content-start">
+        <!-- form -->
+      <div class="row">
         <div class="col-md-3">
           <form>
             <label for="city-name" class="">Type in a city name:</label><br/>
@@ -39,36 +40,79 @@
               class="shadow-sm p-2 mt-3 bg-body rounded form-control"/><br/>
              <div class="d-grid">
             <button type="submit" id="search-btn" class="btn btn-primary">Search</button>
-          </form>
+          </form> <br>
+          <ul class="list-group">
+            
+          </ul>
          </div>
         </div>
-        <div class="col-md-9">
-            <h2 class="ms-2">City!</h2>
+        <!-- form -->
+        <!-- today's weather div -->
+        <div class="col-md-9 border border-info">
+            <h2 class="ms-2"><span id="city-span"></span> <span id="current-date"></span><span id="weather_icon_0"></span></h2>
+            <ul>
+                <li>temp: <span id = "current_temp"></span> °C</li>
+                <li>wind: <span id = "current_wind"></span> mph</li>
+                <li>humidity: <span id = "current_humidity"></span> %</li>
+            </ul>
         </div>
+        <!-- today's weather div -->
+        <!-- 5 day forecast divs -->
           <div class="container">
           <div class="row justify-content-end">
             <div class="col-md-9 align-self-center">
-             <h3 class="ms-2">More info!</h3>
+             <h3 class="ms-2">5-Day Forecast</h3>
              <div class="row justify-content-end justify-content-around">
                 <div class="col-sm-2">
-                    <p>div 1</p>
+                    <p><span id="after_current_day_1">date1</span></p><br>
+                    <span id="weather_icon_1"></span>
+                    <ul>
+                        <li>temp: <span id = "forecast_temp_1"></span> °C</li>
+                        <li>wind: <span id = "forecast_wind_1"></span> mph</li>
+                        <li>humidity: <span id = "forecast_humidity_1"></span> %</li>
+                    </ul>
                 </div>
                 <div class="col-sm-2">
-                    <p>div 2</p>
+                    <p><span id="after_current_day_2">date2</span></p><br>
+                    <span id="weather_icon_2"></span>
+                    <ul>
+                        <li>temp: <span id = "forecast_temp_2"></span> °C</li>
+                        <li>wind: <span id = "forecast_wind_2"></span> mph</li>
+                        <li>humidity: <span id = "forecast_humidity_2"></span> %</li>
+                    </ul>
                 </div>
-                <div class="col-md-2">
-                    <p>div 3</p>
+                <div class="col-sm-2">
+                    <p><span id="after_current_day_3">date3</span></p><br>
+                    <span id="weather_icon_3"></span>
+                    <ul>
+                        <li>temp: <span id = "forecast_temp_3"></span> °C</li>
+                        <li>wind: <span id = "forecast_wind_3"></span> mph</li>
+                        <li>humidity: <span id = "forecast_humidity_3"></span> %</li>
+                    </ul>
                 </div>
-                <div class="col-md-2">
-                    <p>div 4</p>
+                <div class="col-sm-2">
+                    <p><span id="after_current_day_4">date4</span></p><br>
+                    <span id="weather_icon_4"></span>
+                    <ul>
+                        <li>temp: <span id = "forecast_temp_4"></span> °C</li>
+                        <li>wind: <span id = "forecast_wind_4"></span> mph</li>
+                        <li>humidity: <span id = "forecast_humidity_4"></span> %</li>
+                    </ul>
                 </div>
-                <div class="col-md-2">
-                    <p>div 5</p>
+                <div class="col-sm-2">
+                    <p><span id="after_current_day_5">date5</span></p><br>
+                    <span id="weather_icon_5"></span>
+                    <ul>
+                        <li>temp: <span id = "forecast_temp_5"></span> °C</li>
+                        <li>wind: <span id = "forecast_wind_5"></span> mph</li>
+                        <li>humidity: <span id = "forecast_humidity_5"></span> %</li>
+                    </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- five day forecast divs -->
       </div>
     </div>
 

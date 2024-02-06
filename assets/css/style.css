@@ -1,11 +1,24 @@
 
 :root {
 --grey: rgb(106, 106, 106);
---slate-blue: rgb(127, 204, 255)
+--slate-blue: rgb(127, 204, 255);
+--purple: rgb(140, 127, 255);
 }
-
+body {
+    font-family: monospace;
+}
 header {
     background-color: var(--slate-blue);
-    color: var(--grey);
+    color: var(--purple);
 }
-
+li {
+    list-style-type: none;
+}
+.col-sm-2 {
+    background-color: var(--slate-blue);
+}
+button {
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: var(--purple);
+}
