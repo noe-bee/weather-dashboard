@@ -54,7 +54,7 @@ function getCurrentWeather(lat, lon) {
 function getCoordinates(city) {
   //using API to grab coordinates
   var requestUrl =
-    "http://api.openweathermap.org/geo/1.0/direct?q=" +
+    "https://api.openweathermap.org/geo/1.0/direct?q=" +
     city +
     "&limit=1&appid=" +
     APIKey;
@@ -74,7 +74,7 @@ function getCoordinates(city) {
 function getForecast(lat, lon) {
   //using API for 5 DAY forecast
   var fiveDayForecast =
-    "http://api.openweathermap.org/data/2.5/forecast?lat=" +
+    "https://api.openweathermap.org/data/2.5/forecast?lat=" +
     lat +
     "&lon=" +
     lon +
