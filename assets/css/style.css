@@ -3,6 +3,7 @@
 --grey: rgb(106, 106, 106);
 --slate-blue: rgb(127, 204, 255);
 --purple: rgb(140, 127, 255);
+--light-purple: rgb(173, 164, 255);
 }
 body {
     font-family: monospace;
@@ -20,5 +21,14 @@ li {
 button {
     margin-top: 5px;
     border-radius: 10px;
-    background-color: var(--purple);
+    background-color: var(--light-purple);
+}
+#today-container {
+    border-style: dotted;
+    color: var(--slate-blue);
+    border-radius: 10px;
+}
+.col-sm-2{
+    color: var(--purple);
+    border-radius: 10px;
 }
