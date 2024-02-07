@@ -14,8 +14,10 @@ searchBtnEl.addEventListener("click", function (event) {
   //add functionality to search btn
   event.preventDefault();
   var userInput = userInputEl.value;
+  console.log(userInput);
   saveToLocalStorage(userInput);
   getCoordinates(userInput);
+  displayCitySpan.textContent = userInput;
 });
 
 function saveToLocalStorage(cityName) {
